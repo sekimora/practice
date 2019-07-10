@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-07-04T16:52:46.530+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required Owner parameter 'ow' is not present",
+  "path": "/demo/add_owner"
+}

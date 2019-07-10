@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="table.css" rel="stylesheet">
+    <style type="text/css">
+        button.new {
+
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#9dd600), to(#ffff00));
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dd600', endColorstr='#ffff00');
+            padding: 9px 7px;
+            color: #3d2b1f;
+            border-radius: 5px;
+            border: 3px solid #cc7722;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-weight: 100;
+            position: relative;
+            color: #3d2b1f;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .text1 {
+            bgcolor: #cc7722;
+            padding: 9px 7px;
+            border: 3px solid #cc7722;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-weight: 100;
+            position: relative;
+            color: #3d2b1f;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .text2 {
+            bgcolor: #3d2b1f;
+            padding: 9px 7px;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-weight: 100;
+            position: center;
+            color: #cc7722;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .tit2 {
+            background: #e8be34;
+            padding: 50px 20px 50px 170px;
+            text-align: center;
+        }
+
+        .tit2 h1 {
+            font-family: 'Comic Sans MS', sans-serif;
+            font-weight: 400;
+            position: relative;
+            color: #3d2b1f;
+            font-size: 2.5em;
+            font-weight: normal;
+            display: inline-block;
+            margin: 0;
+            line-height: 1;
+            padding: 8px 20px 8px 2px;
+            border-top: 4px solid;
+        }
+
+        .tit2 h1:before {
+            content: "ZOO";
+            position: absolute;
+            top: -10px;
+            left: -160px;
+            font-size: 1.5em;
+            transform: rotate(-25deg);
+            font-family: 'Marck Script', cursive;
+        }
+
+        .tit2 h1:after {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 4px;
+            right: 0;
+            bottom: -4px;
+            background: #cc7722;
+        }
+
+        @media (max-width: 580px) {
+            .tit2 {
+                padding-left: 130px;
+            }
+
+            .tit2 h1 {
+                font-size: 2em;
+            }
+
+            .tit2 h1:before {
+                left: -130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tit2 {
+                padding-left: 100px;
+            }
+
+            .tit2 h1 {
+                font-size: 1.5em;
+                padding-right: 10px;
+            }
+
+            .tit2 h1:before {
+                left: -100px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .tit2 {
+                padding-left: 90px;
+            }
+
+            .tit2 h1 {
+                font-size: 1.3em;
+            }
+
+            .tit2 h1:before {
+                left: -88px;
+            }
+        }
+
+        .tit1 {
+            background: #3d2b1f;
+            padding: 50px 20px 50px 170px;
+            text-align: center;
+        }
+
+        .tit1 h1 {
+            font-family: 'Comic Sans MS', sans-serif;
+            font-weight: 400;
+            position: relative;
+            color: #ffff00;
+            font-size: 4em;
+            font-weight: normal;
+            display: inline-block;
+            margin: 0;
+            line-height: 1;
+            padding: 8px 20px 8px 2px;
+            border-top: 4px solid;
+        }
+
+        .tit1 h1:before {
+            content: "ZOO";
+            position: absolute;
+            top: -20px;
+            left: -240px;
+            font-size: 1.5em;
+            transform: rotate(-25deg);
+            font-family: 'Marck Script', cursive;
+        }
+
+        .tit1 h1:after {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 4px;
+            right: 0;
+            bottom: -4px;
+            background: #9dd600;
+        }
+
+        @media (max-width: 580px) {
+            .tit1 {
+                padding-left: 130px;
+            }
+
+            .tit1 h1 {
+                font-size: 2em;
+            }
+
+            .tit1 h1:before {
+                left: -130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tit1 {
+                padding-left: 100px;
+            }
+
+            .tit1 h1 {
+                font-size: 1.5em;
+                padding-right: 10px;
+            }
+
+            .tit1 h1:before {
+                left: -100px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .tit1 {
+                padding-left: 90px;
+            }
+
+            .tit1 h1 {
+                font-size: 1.3em;
+            }
+
+            .tit1 h1:before {
+                left: -88px;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="#3d2b1f">
+<div class="tit1"><h1>ПАРКИНГ</h1></div>
+<div class="tit2"><h1>ВЛАДЕЛЬЦЫ</h1></div>
+
+<form action="/demo/add_owner" method="POST">
+    <input class="text1" name="firstname" placeholder="Имя" type="text">
+    <input class="text1" name="secondname" placeholder="Фамилия" type="text">
+    <input class="text1" name="adr_owner" placeholder="Адрес" type="text">
+    <button class="new" type="submit">Добавить владельца</button>
+</form>
+<form action="/demo/get_owners" method="GET">
+    <output name="id_owner" placeholder="ID владельца" type="number"></output>
+    <output name="firstname" placeholder="Имя" type="text"></output>
+    <output name="secondname" placeholder="Фамилия" type="text"></output>
+    <output name="adr_owner" placeholder="Адрес" type="text"></output>
+    <button class="new" type="submit">Показать владельцев</button>
+</form>
+<form action="/demo/del_owner" method="GET">
+    <input class="text1" name="id_owner" placeholder="ID владельца" type="number">
+    <button class="new" type="submit">Удалить владельца</button>
+</form>
+<form action="/demo/count_owners" method="GET">
+    <output name="count" placeholder="Количество" type="number"></output>
+    <button class="new" type="submit">Посчитать владельцев</button>
+</form>
+<div class="tit2"><h1>ПОСТОЯЛЬЦЫ</h1></div>
+<form action="/demo/add_animal" method="POST">
+    <input class="text1" name="kind_animal" placeholder="Вид" type="text">
+    <input class="text1" name="name_animal" placeholder="Кличка" type="text">
+    <input class="text1" name="sex_animal" placeholder="Пол" type="text">
+    <input class="text1" name="weight_animal" placeholder="Вес" type="number">
+    <input class="text1" name="id_owner" placeholder="ID владельца" type="number">
+    <input class="text1" name="id_cage" placeholder="ID клетки" type="number">
+    <button class="new" type="submit">Добавить животное</button>
+</form>
+<form action="/demo/get_animals" method="GET">
+    <output name="id_animal" placeholder="ID животного" type="number"></output>
+    <output name="kind_animal" placeholder="Вид" type="text"></output>
+    <output name="name_animal" placeholder="Кличка" type="text"></output>
+    <output name="sex_animal" placeholder="Пол" type="text"></output>
+    <output name="weight_animal" placeholder="Вес" type="number"></output>
+    <output name="id_owner" placeholder="ID владельца" type="number"></output>
+    <output name="id_cage" placeholder="ID клетки" type="number"></output>
+    <button class="new" type="submit">Показать животных</button>
+</form>
+<form action="/demo/del_animal" method="GET">
+    <input class="text1" name="id_animal" placeholder="ID животного" type="number">
+    <button class="new" type="submit">Удалить животное</button>
+</form>
+<form action="/demo/count_animals" method="GET">
+    <output name="count" placeholder="Количество" type="number"></output>
+    <button class="new" type="submit">Посчитать животных</button>
+</form>
+<div class="tit2"><h1>АПАРТАМЕНТЫ</h1></div>
+<form action="/demo/add_cage" method="POST">
+    <input class="text1" name="width_cage" placeholder="X" type="number">
+    <input class="text1" name="lenght_cage" placeholder="Y" type="number">
+    <input class="text1" name="height_cage" placeholder="Z" type="number">
+    <button class="new" type="submit">Добавить клетку</button>
+</form>
+<form action="/demo/get_cages" method="GET">
+    <output name="id_cage" placeholder="ID клетки" type="number"></output>
+    <output name="width_cage" placeholder="X" type="number"></output>
+    <output name="lenght_cage" placeholder="Y" type="number"></output>
+    <output name="height_cage" placeholder="Z" type="number"></output>
+    <button class="new" type="submit">Показать клетки</button>
+</form>
+<form action="/demo/del_cage" method="GET">
+    <input class="text1" name="id_cage" placeholder="ID клетки" type="number">
+    <button class="new" type="submit">Удалить клетку</button>
+</form>
+<form action="/demo/count_cages" method="GET">
+    <output name="count" placeholder="Количество" type="number"></output>
+    <button class="new" type="submit">Посчитать клетки</button>
+</form>
+<br>
+<br>
+<dev class="text2"><p align="center">Здесь мог бы быть наш телефон..</p></dev>
+</body>
+</html>

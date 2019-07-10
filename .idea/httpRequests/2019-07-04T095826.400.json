@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-07-04T17:58:25.688+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required String parameter 'firstname' is not present",
+  "path": "/demo/add_owner"
+}

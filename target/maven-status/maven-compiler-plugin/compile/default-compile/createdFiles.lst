@@ -1,0 +1,15 @@
+com\sekimora\repos\OwnerRepository.class
+com\sekimora\Application.class
+com\sekimora\controller\ServerPortCustomizer.class
+com\sekimora\models\Cage.class
+com\sekimora\controller\MainController.class
+com\sekimora\repos\AnimalRepository.class
+com\sekimora\controller\GreetingController.class
+com\sekimora\services\OwnerService.class
+com\sekimora\services\CageService.class
+com\sekimora\repos\ConigurableWebServerFactory.class
+com\sekimora\models\Greeting.class
+com\sekimora\repos\CageRepository.class
+com\sekimora\models\Owner.class
+com\sekimora\services\AnimalService.class
+com\sekimora\models\Animal.class
